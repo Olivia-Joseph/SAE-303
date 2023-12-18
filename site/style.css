@@ -1,0 +1,107 @@
+/*Note: si on change le nombre de slide il faut ajouter une section dans "pin-wrap" et pour le css .pin-wrap il faut augmenter de 100vmax et ca rajoute une slide*/
+
+body {
+  overflow-x: hidden; /* Pour enlever le defilement horizontale */
+  margin: 0;
+  padding: 0;
+}
+
+.accueil__img {
+  display: flex;
+  object-fit: contain;
+  width: 100vw;
+  height: 100vh;
+}
+
+.accueil__anim {
+  width: 100%;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: -5rem;
+  z-index: 2;
+}
+
+@layer orig {
+  .section__conclusion {
+    min-height: 100vh;
+    width: 100%;
+    overflow-y: hidden;
+    position: relative;
+  }
+
+  .pin-wrap {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+  }
+}
+
+@supports (animation-timeline: view()) {
+  @keyframes move {
+    to {
+      transform: translateX(calc(-100% + 100vw));
+      left: 0px;
+    }
+  }
+
+  .carrousel {
+    height: 800vh;
+    overflow: visible;
+    view-timeline-name: --section-pin-tl;
+    view-timeline-axis: block;
+    background-color: #b9b3a9;
+  }
+
+  .section__horizontale {
+    height: 100vh;
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .pin-wrap {
+    display: flex;
+    height: 100vh;
+    width: 900vmax; /*pour changer la taille du slider*/
+    will-change: transform;
+    animation: linear move forwards;
+    animation-timeline: --section-pin-tl;
+    animation-range: contain 0% contain 100%;
+    overflow-y: hidden;
+  }
+}
+
+.station {
+  position: absolute;
+  width: 30rem;
+  top: -5rem;
+  left: 15rem;
+}
+
+.voiture {
+  position: absolute;
+  width: 50rem;
+  left: -5rem;
+  bottom: -9rem;
+  display: flex;
+}
+
+.texte__voiture {
+  font-family: Amaranth;
+  font-size: 5rem;
+  color: white;
+  position: absolute;
+  bottom: -2rem;
+  left: 45rem;
+}
+
+.section__voiture2 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
