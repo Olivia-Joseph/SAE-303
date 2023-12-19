@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Page 2</title>
+</head>
+
+
+<body>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src=https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js></script>
+
+
+    <section class="page2">
+
+
+        <h2 class="page2__text">
+            Savez-vous qu'en moyenne, les européens passent 9h30 par semaine dans un transport ?
+        </h2>
+
+        <div class="page2__div">
+            <h2 class="page2__text--droite">Parmi eux :</h2>
+        </div>
+
+        <lottie-player class="page2__video" id="firstLottie" src="./piechart3.json" background="transparent" speed="1" direction="1" mode="normal" autoplay>
+        </lottie-player>
+
+        <h2 class="page2__text">
+            Mais connaissez-vous les conséquences de ces trajets ?
+        </h2>
+
+        <div class="page2__navbar">
+
+        </div>
+
+
+    </section>
+
+
+
+    <script>
+        console.log(document.querySelector("#firstLottie"))
+        LottieInteractivity.create({
+            player: "#firstLottie",
+            mode: "normal",
+            actions: [{
+                visibility: [0, 1],
+                type: "seek",
+                frames: [0, 750],
+            }, ],
+        });
+    </script>
+</body>
+
+
+
+</html>
