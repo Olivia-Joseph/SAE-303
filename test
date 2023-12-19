@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      La Mobilité Responsable
+    </title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+    <script src="lottie.js"></script>
+  </head>
+
+  <body>
+    <div class="page">
+      <div class="section__accueil">
+        <img class="accueil__img" src="./asset/background.png" />
+        <div id="bm" class="accueil__anim"></div>
+      </div>
+
+      <section class="carrousel">
+        <div class="section__horizontale">
+          <div class="pin-wrap">
+
+            <section class="section__olivia">
+              <h1 class="h1__camembert">PAGE OLIVIA</h1>
+            </section>
+            <section class="section__test">
+              <img src="./asset/longueur.png" alt="">
+           
+            </section>
+            <section class="section__"></section>
+            <section class="section__"></section>
+          </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__conclusion">
+        <h2>
+          Created by >.>Adapted from the original by Cameron Knight
+        </h2>
+      </section>
+    </div>
+  </body>
+
+  <script>
+    let anim = bodymovin.loadAnimation({
+      container: document.getElementById("bm"),
+      renderer: "svg",
+      autoplay: true,
+      loop: false,
+      path: "./json/animAccueil.json",
+    });
+  </script>
+</html>
+
+.section__test{
+  width: auto;
+  height: 130vh;
+  object-fit: cover;
+  background: no-repeat;
+}
