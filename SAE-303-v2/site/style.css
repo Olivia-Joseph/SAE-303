@@ -1,6 +1,6 @@
 /*Note: si on change le nombre de slide il faut ajouter une section dans "pin-wrap" et pour le css .pin-wrap il faut augmenter de 100vmax et ca rajoute une 
 slide*/
-@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 *,
 *::before,
@@ -14,13 +14,21 @@ html {
   text-size-adjust: none;
 }
 
-body, h1, h2, h3, h4, p,
-figure, blockquote, dl, dd {
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
   margin-block-end: 0;
 }
 
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -99,19 +107,58 @@ body {
     overflow-y: hidden;
     background: linear-gradient(to right, #94caf5, #436987);
     scroll-behavior: slow;
-    
   }
 }
 
+/*Section Camembert*/
 
-
-.section__olivia {
-  position: relative;
+.page2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #94caf5;
   width: 100vw;
   height: 100vh;
+  padding: 2rem;
 }
 
-[class^="section__"]{
+.page2__text {
+  font-family: "Amaranth", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+
+.page2__div {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 70vw;
+  position: absolute;
+  top: 13rem;
+  left: 10rem;
+}
+
+.page2__text--droite {
+  font-family: "Amaranth", sans-serif;
+  font-size: 2.5rem;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.page2__video {
+  padding: 0;
+  display: flex;
+  width: 80vw;
+}
+
+[class^="section__"] {
   background-position: bottom;
 }
 
@@ -123,54 +170,52 @@ body {
   background-image: url("./asset/pieton.png");
   background-size: contain;
   background-repeat: no-repeat;
-
-
 }
 
-.pieton__forme {
-  color: white;
+.h3__pieton {
+  display: flex;
+  justify-content: end;
+  padding-right: 20rem;
+  font-size: 2.5rem;
   font-family: Amaranth;
-  font-size: 3rem;
-  margin: 0;
-  position: absolute;
-  top: 3rem;
-  right: 25rem;
+  color: white;
 }
 
-.pieton__span {
-  color: white;
-  font-family: Amaranth;
-  font-size: 2rem;
-  margin: 0;
-  position: absolute;
-}
-
-.pieton__pourcent {
-  color: white;
-  font-family: Amaranth;
-  font-size: 2rem;
-  margin: 0;
-  position: absolute;
-}
-
-.pieton__co2 {
-  color: white;
-  font-family: Amaranth;
-  font-size: 2rem;
-  margin: 0;
-  position: absolute;
-}
-
-.pieton__limit {
-  color: white;
-  font-family: Amaranth;
-  font-size: 2rem;
-  margin: 0;
-  position: absolute;
-  top: 12rem;
-  right: 17rem;
-  width: 25rem;
+.h3-h2__pieton {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.25rem;
   text-align: center;
+  font-family: Amaranth;
+  color: white;
+}
+
+.h3-h2__pieton h2 {
+  font-size: 4rem;
+}
+
+.h3-h2__pieton h3 {
+  font-size: 2.5rem;
+}
+
+.h3-2__pieton {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 8rem;
+  margin-left: 45rem;
+  font-size: 2.5rem;
+  font-family: Amaranth;
+  color: white;
+}
+
+.h3-3__pieton {
+  display: flex;
+  margin-left: 32rem;
+  font-size: 2.5rem;
+  font-family: Amaranth;
+  color: white;
 }
 
 /*Section Velo*/
@@ -183,6 +228,44 @@ body {
   background-repeat: no-repeat;
 }
 
+.velo__texte {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  font-family: Amaranth;
+  color: white;
+}
+
+.h3-2__velo {
+  font-size: 2rem;
+  font-family: Amaranth;
+  color: white;
+  display: flex;
+  margin-top: 12rem;
+  margin-left: 20rem;
+}
+
+.h3-3__velo {
+  font-family: Amaranth;
+  color: white;
+  display: flex;
+  justify-content: end;
+  margin-right: 15rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.h3-4__velo {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-family: Amaranth;
+  color: white;
+
+  margin-right: 30rem;
+}
+
 /*Section Train*/
 .section__train {
   position: relative;
@@ -193,6 +276,32 @@ body {
   background-repeat: no-repeat;
 }
 
+.texte__train {
+  font-family: Amaranth;
+  color: white;
+  display: flex;
+  font-size: 3rem;
+  justify-content: center;
+}
+
+.h3-2__train {
+  font-size: 2rem;
+  display: flex;
+  justify-content: end;
+  font-family: Amaranth;
+  color: white;
+  margin-top: 15rem;
+  margin-right: 5rem;
+}
+
+.h3-3__train {
+  font-size: 2rem;
+  display: flex;
+  margin-left: 8rem;
+  font-family: Amaranth;
+  color: white;
+}
+
 /*Section Moto*/
 .section__moto {
   position: relative;
@@ -200,27 +309,96 @@ body {
   height: 100vh;
   background-image: url("./asset/moto.png");
   background-size: contain;
-  background-repeat: no-repeat;;
+  background-repeat: no-repeat;
+}
+
+.texte__moto {
+  display: flex;
+  font-size: 3rem;
+  justify-content: center;
+  font-family: Amaranth;
+  color: white;
+}
+
+.texte2__moto {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 11.5rem;
+  margin-right: 15rem;
+  font-size: 2rem;
+  font-family: Amaranth;
+  color: white;
+}
+
+.texte3__moto {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+ 
+  font-size: 2rem;
+  font-family: Amaranth;
+  color: white;
+}
+
+.h3-2__moto {
+  font-size: 1.5rem;
+  font-family: Amaranth;
+  color: white;
 }
 
 /*Section Bus*/
-.section__voiture5 {
+.section__bus {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-image: url("./asset/ecran5.png");
+  background-image: url("./asset/bus.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
+.sangle__texte {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  gap: 1rem;
+  font-family: Amaranth;
+  color: white;
+}
+
+.h3-2__bus {
+  font-size: 1.5rem;
+  font-family: Amaranth;
+  color: white;
+}
+
+.texte__bus {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  gap: 0.25rem;
+  font-family: Amaranth;
+  color: white;
+}
+
 /* ------------ Section Voiture ------------*/
-.section__voiture6 {
+.section__voiture {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-image: url("./asset/ecran6.png");
+  background-image: url("./asset/voiture.png");
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.voiture__texte {
+  display: flex;
+  align-items: center;
+  font-family: Amaranth;
+  color: white;
 }
 
 .station {
@@ -237,7 +415,6 @@ body {
   width: 50rem;
   left: -5rem;
   bottom: -16rem;
-  
 }
 
 .texte__voiture {
@@ -269,70 +446,72 @@ body {
 }
 
 /* ------------ Section Bateau ------------ */
-.section__voiture7 {
+.section__bateau {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-image: url("./asset/ecran7.png");
+  background-image: url("./asset/bateau.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
 }
 
+.bateau__texte {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-family: Amaranth;
+  color: white;
+}
+
+.bat__bateau {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.25rem;
+}
+
+.bat2__bateau {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.25rem;
+}
+
 /* ------------ Section Avion ------------ */
-.section__voiture8 {
+.section__avion {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-image: url("./asset/ecran8.png");
+  background-image: url("./asset/avion.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-
-
-.page2{
+.texte__avion {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background-color: #94caf5 ;
-  width: 100vw;
-  height: 100vh;
-  padding: 2rem
-}
-
-.page2__text{
-  font-family: 'Amaranth', sans-serif;
-  font-size: 3rem;
-  font-weight: 700;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  color: white;
-}
-
-.page2__div{
-  display: flex;
   flex-direction: row;
-  justify-content: start;
-  align-items: center;
-  width: 70vw;
-  position: absolute;
-  top: 13rem;
-  left: 10rem
-}
-
-.page2__text--droite{
-  font-family: 'Amaranth', sans-serif;
-  font-size: 2.5rem;
-  padding: 0;
-  margin: 0;
+  gap: 0.25rem;
+  text-align: center;
+  font-family: Amaranth;
   color: white;
 }
 
-.page2__video{
-  padding: 0;
+.texte2__avion {
   display: flex;
-  width: 80vw;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.25rem;
+  text-align: center;
+  font-family: Amaranth;
+  color: white;
+}
+
+/* ------------ Section Conclusion ------------ */
+
+.section__conclusion {
+  font-family: Amaranth;
+  color: white;
 }
