@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      La Mobilité Responsable
+    </title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+    <script src="lottie.js"></script>
+  </head>
+
+  <body>
+    <div class="page">
+      <div class="section__accueil">
+        <img class="accueil__img" src="./asset/background.png" />
+        <div id="bm" class="accueil__anim"></div>
+      </div>
+
+      <section class="carrousel">
+        <div class="section__horizontale">
+          <div class="pin-wrap">
+            <section class="page2">
+
+
+              <h2 class="page2__text">
+                  Savez-vous qu'en moyenne, les européens passent 9h30 par semaine dans un transport ?
+              </h2>
+      
+              <div class="page2__div">
+                  <h2 class="page2__text--droite">Parmi eux :</h2>
+              </div>
+      
+              <lottie-player class="page2__video" id="firstLottie" src="./json/piechart3.json" background="transparent" speed="1" direction="1" mode="normal" autoplay>
+              </lottie-player>
+      
+              <h2 class="page2__text">
+                  Mais connaissez-vous les conséquences de ces trajets ?
+              </h2>
+      
+              <div class="page2__navbar">
+      
+              </div>
+      
+      
+          </section>
+            <section class="section__pieton">
+             
+            </section>
+            <section class="section__velo"></section>
+            <section class="section__train"></section>
+            <section class="section__moto"></section>
+            <section class="section__voiture5"></section>
+            <section class="section__voiture6">
+              <h3 class="h3__voiture">
+                1,3 million de personnes perdent la vie dans des accidents de
+                circulation
+              </h3>
+              <lottie-player
+                class="station"
+                id="station"
+                src="./json/station.json"
+                background="transparent"
+                direction="1"
+                mode="normal"
+                hover
+              ></lottie-player>
+              <lottie-player
+                class="voiture"
+                id="voiture"
+                src="./json/voiture.json"
+                background="transparent"
+                speed="1"
+                direction="1"
+                mode="normal"
+                autoplay
+                loop
+              ></lottie-player>
+              <h2 class="texte__voiture">1,9 kg CO2/10km</h2>
+              <h3 class="h3-2__voiture">74% des actifs l'utilisent</h3>
+            </section>
+            <section class="section__voiture7"></section>
+            <section class="section__voiture8"></section>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__conclusion">
+        <h2>
+          Created by >.>Adapted from the original by Cameron Knight
+        </h2>
+      </section>
+    </div>
+  </body>
+
+  <script>
+    let anim = bodymovin.loadAnimation({
+      container: document.getElementById("bm"),
+      renderer: "svg",
+      autoplay: true,
+      loop: false,
+      path: "./json/animAccueil.json",
+    });
+  </script>
+</html>
