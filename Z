@@ -1,0 +1,29 @@
+      let selects = document.querySelectorAll(".select");
+      const option = {
+        root: null,
+        rootMargin: "0px 0px 0px 0px",
+        threshold: 0.8,
+      };
+
+      const observer = new IntersectionObserver(function (entries, observer) {
+        entries.forEach((entry) => {
+          console.log(entry.isIntersecting);
+          if (entry.isIntersecting) {
+            entry.target.play();
+          } else {
+            entry.target.stop();
+          }
+        });
+      }, option);
+
+      selects.forEach((select) => {
+        observer.observe(select);
+      });
+
+           <lottie-player
+              class="select"
+              id="meduse"
+              src="./arbrev2.json"
+              background="transparent"
+              loop
+            ></lottie-player>
