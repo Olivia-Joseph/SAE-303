@@ -1,9 +1,0 @@
-<section class="consequences">
-        <h2 class="consequences__title">
-          ... et les conséquences ?
-        </h2>
-
-        <lottie-player class="consequences__video" id="firstLottie" src="./json/terre2.json" background="transparent" speed="1" direction="1" mode="normal" hover >
-        </lottie-player>
-
-      </section>
