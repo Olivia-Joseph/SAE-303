@@ -1,6 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+
 /*Note: si on change le nombre de slide il faut ajouter une section dans "pin-wrap" et pour le css .pin-wrap il faut augmenter de 100vmax et ca rajoute une 
 slide*/
-@import url("https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+
+/*Résolution optimisé 1680 1050*/
+
+/*Résolution de fou 2513 1494*/
 
 *,
 *::before,
@@ -33,9 +40,10 @@ ol[role="list"] {
 }
 
 body {
-  overflow-x: hidden; /* Pour enlever le defilement horizontale */
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
+  background-color: #436987;
 }
 
 .accueil__img {
@@ -50,9 +58,8 @@ body {
   position: absolute;
   justify-content: center;
   align-items: center;
-  top: -5rem;
   z-index: 2;
-  bottom: -4.5rem;
+  bottom: -.5rem;
 }
 
 @layer orig {
@@ -89,7 +96,7 @@ body {
 
   .section__horizontale {
     height: 100vh;
-    width: 100vw;
+    width: 1000vw;
     position: sticky;
     top: 0;
     width: 100vw;
@@ -110,7 +117,7 @@ body {
   }
 }
 
-/*Section Camembert*/
+/* ------------ Section Camembert ------------*/
 
 .page2 {
   display: flex;
@@ -162,7 +169,7 @@ body {
   background-position: bottom;
 }
 
-/*Section Pieton*/
+/* ------------ Section Pieton ------------ */
 .section__pieton {
   position: relative;
   width: 100vw;
@@ -175,9 +182,10 @@ body {
 .h3__pieton {
   display: flex;
   justify-content: end;
+  
   padding-right: 20rem;
   font-size: 2.5rem;
-  font-family: Amaranth;
+  font-family: "Amaranth", sans-serif;
   color: white;
 }
 
@@ -187,15 +195,15 @@ body {
   flex-direction: column;
   gap: 0.25rem;
   text-align: center;
-  font-family: Amaranth;
+  font-family: "Amaranth", sans-serif;
   color: white;
 }
 
-.h3-h2__pieton h2 {
-  font-size: 4rem;
+.h3-h2__pieton-h2 {
+  font-size: 5rem;
 }
 
-.h3-h2__pieton h3 {
+.h3-h2__pieton-h3 {
   font-size: 2.5rem;
 }
 
@@ -203,22 +211,26 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-top: 8rem;
+  margin-top: 12rem;
   margin-left: 45rem;
   font-size: 2.5rem;
-  font-family: Amaranth;
+  font-family: "Amaranth", sans-serif;
   color: white;
 }
 
 .h3-3__pieton {
   display: flex;
-  margin-left: 32rem;
+  margin-left: 25rem;
   font-size: 2.5rem;
-  font-family: Amaranth;
+  font-family: "Amaranth", sans-serif;
   color: white;
 }
 
-/*Section Velo*/
+.h3-h2__pieton-h2{
+  font-size: 4rem;
+}
+
+/* ------------ Section Velo ------------*/
 .section__velo {
   position: relative;
   width: 100vw;
@@ -232,41 +244,25 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
+  margin-top: 7.5rem;
+  margin-bottom: 15rem;
   font-size: 2rem;
-  font-family: Amaranth;
+  font-family: "Amaranth", sans-serif;
   color: white;
 }
 
-.h3-2__velo {
-  font-size: 2rem;
-  font-family: Amaranth;
-  color: white;
-  display: flex;
-  margin-top: 12rem;
-  margin-left: 20rem;
-}
-
-.h3-3__velo {
-  font-family: Amaranth;
-  color: white;
-  display: flex;
-  justify-content: end;
-  margin-right: 15rem;
-  font-size: 2rem;
-  text-align: center;
-}
-
-.h3-4__velo {
+.h3__velo {
   display: flex;
   justify-content: center;
-  font-size: 2rem;
-  font-family: Amaranth;
+  margin-left: 8rem;
+  font-size: 3rem;
+  font-family: "Amaranth", sans-serif;
   color: white;
 
   margin-right: 30rem;
 }
 
-/*Section Train*/
+/* ------------ Section Train ------------ */
 .section__train {
   position: relative;
   width: 100vw;
@@ -276,33 +272,17 @@ body {
   background-repeat: no-repeat;
 }
 
-.texte__train {
-  font-family: Amaranth;
-  color: white;
-  display: flex;
+.h3__train {
   font-size: 3rem;
-  justify-content: center;
-}
-
-.h3-2__train {
-  font-size: 2rem;
   display: flex;
-  justify-content: end;
-  font-family: Amaranth;
+  justify-content: center;
+  font-family: "Amaranth", sans-serif;
   color: white;
   margin-top: 15rem;
-  margin-right: 10rem;
+
 }
 
-.h3-3__train {
-  font-size: 2.5rem;
-  display: flex;
-  margin-left: 8rem;
-  font-family: Amaranth;
-  color: white;
-}
-
-/*Section Moto*/
+/* ------------ Section Moto ------------ */
 .section__moto {
   position: relative;
   width: 100vw;
@@ -312,47 +292,29 @@ body {
   background-repeat: no-repeat;
 }
 
+
 .texte__moto {
   display: flex;
-  font-size: 3rem;
   justify-content: center;
-  margin-bottom: 3rem;
-  font-family: Amaranth;
-  color: white;
-}
-
-.texte2__moto {
-  display: flex;
-  justify-content: end;
   align-items: center;
   gap: 0.25rem;
-  margin-top: 7.5rem;
-  margin-right: 15rem;
-  font-size: 2rem;
-  font-family: Amaranth;
-  color: white;
-}
+  margin-top: 25rem;
 
-.texte3__moto {
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
-  margin-left: 10rem;
   font-size: 2rem;
-  font-family: Amaranth;
+  font-family: "Amaranth", sans-serif;
   color: white;
 }
 
 .h3-2__moto {
   display: flex;
-  align-items: center;
+  justify-content: center;
   font-size: 2rem;
-  margin-left: 10rem;
-  font-family: Amaranth;
+  margin-top: 7rem;
+  font-family: "Amaranth", sans-serif;
   color: white;
 }
 
-/*Section Bus*/
+/* ------------ Section Bus ------------ */
 .section__bus {
   position: relative;
   width: 100vw;
@@ -360,17 +322,6 @@ body {
   background-image: url("./asset/bus.png");
   background-size: contain;
   background-repeat: no-repeat;
-}
-
-.sangle__texte {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  flex-direction: row;
-  font-size: 1.5rem;
-  gap: 1rem;
-  font-family: Amaranth;
-  color: white;
 }
 
 .h3-2__bus {
@@ -383,7 +334,7 @@ body {
   padding-top: .5rem;
   transform: rotate(5deg);
   font-size: 2rem;
-  font-family: Amaranth;
+  font-family: "Amaranth", sans-serif;
   color: white;
 }
 
@@ -393,23 +344,18 @@ body {
   margin-right: 26rem;
   margin-left: 12rem;
   font-size: 3rem;
-  font-family: Amaranth;
+  font-family: "Amaranth", sans-serif;
   color: white;
 }
 
-.texte__bus {
+.bus{
   display: flex;
-  justify-content: end;
-  align-items: center;
-  flex-direction: row;
-  font-size: 2rem;
-  margin-right: 15rem;
-  gap: 0.25rem;
-  font-family: Amaranth;
-  color: white;
+  padding-top: 10rem;
+  padding-right: 5rem;
+  width: 55rem;
 }
 
-/* ------------ Section Voiture ------------*/
+/* ------------ Section Voiture ------------ */
 .section__voiture {
   position: relative;
   width: 100vw;
@@ -422,14 +368,14 @@ body {
 .voiture__texte {
   display: flex;
   align-items: center;
-  font-family: Amaranth;
+  font-family: "Amaranth", sans-serif;
   color: white;
 }
 
 .station {
   position: absolute;
-  width: 30rem;
-  top: -13.5rem;
+  width: 35rem;
+  top: -8rem;
   left: 15.5rem;
   z-index: 2;
 }
@@ -439,16 +385,16 @@ body {
   position: absolute;
   width: 50rem;
   left: -5rem;
-  bottom: -16rem;
+  bottom: -20rem;
 }
 
 .texte__voiture {
   display: flex;
   justify-content: end;
-  margin-top: 25rem;
-  margin-right: 15rem;
+  margin-top: 34rem;
+  margin-right: 12rem;
   font-size: 3rem;
-  font-family: Amaranth;
+  font-family: "Amaranth", sans-serif;
   color: white;
 }
 
@@ -456,8 +402,9 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
+  margin-top: 15rem;
   padding-left: 30rem;
-  font-family: Amaranth;
+  font-family: "Amaranth", sans-serif;
   font-size: 2.5rem;
   color: white;
   
@@ -470,45 +417,28 @@ body {
   margin-top: 17rem;
   margin-right: 3.5rem;
   font-size: 2.5rem;
-  font-family: Amaranth;
+  font-family: "Amaranth", sans-serif;
   color: white;
 }
 
 /* ------------ Section Bateau ------------ */
 .section__bateau {
   position: relative;
+  display: flex;
   width: 100vw;
   height: 100vh;
   background-image: url("./asset/bateau.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
+justify-content: end;
 }
 
-.bateau__texte {
+.meduse{
+  width: 75rem;
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 0.25rem;
-  font-size: 1.5rem;
-  margin-top: 9rem;
-  padding-right: 80rem;
-  font-family: Amaranth;
-  color: white;
-}
+  justify-content: end;
 
-.bat__bateau {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  gap: 0.25rem;
-}
-
-.bat2__bateau {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  gap: 0.25rem;
 }
 
 /* ------------ Section Avion ------------ */
@@ -521,39 +451,147 @@ body {
   background-image: url("./asset/avion.png");
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: top;
 }
 
 .texte__avion {
   display: flex;
   align-items: center;
   flex-direction: row;
-  gap: 0.25rem;
   text-align: center;
-  margin-left: 18rem;
-  padding-bottom: 27rem;
-  transform: rotate(-10deg);
   font-size: 2rem;
-  font-family: Amaranth;
+  font-family: "Amaranth", sans-serif;
   color: white;
 }
 
 .texte2__avion {
   display: flex;
   align-items: center;
-  gap: 0.25rem;
   text-align: start;
-  transform: rotate(5deg);
-  padding-bottom: 31rem;
-  padding-left: 34rem;
   font-size: 2rem;
-  font-family: Amaranth;
+  font-family: "Amaranth", sans-serif;
   color: white;
 }
 
+.avion__texte{
+  display: flex;
+  justify-content: end;
+}
 
-/* ------------ Section Conclusion ------------ */
-
-.section__conclusion {
-  font-family: Amaranth;
+/* ------------ Section Consequences ------------ */
+.consequences{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #436987;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  font-family: "Amaranth", sans-serif;
   color: white;
+  overflow: hidden;
+}
+
+.consequences__title{
+  font-family: 'Amaranth', sans-serif;
+  font-size: 4rem;
+  padding: 0;
+  margin-top: 5rem ;
+  text-align: center;
+}
+
+/* ------------ Section Solution ------------*/
+.section__solution {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #436987;
+}
+
+.selective__solutions{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  padding: 5rem;
+  justify-content: space-between;
+  max-width: 100vw;
+}
+
+.solution__h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 4rem;
+  font-family: 'Amaranth', sans-serif;
+}
+
+.solution__velo-img{
+  width: 15rem;
+}
+
+
+.flip-container {
+  position: relative;
+  display: flex;
+  perspective: 1000px;
+  min-width: 30%;
+  width: 40em;
+  height: 10em;
+}
+
+.flip-container:hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.flipper {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-origin: center;
+
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #436987;
+  border: white solid 2px;
+  border-radius: 1rem;
+}
+
+.back {
+  background-color: #436987;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 2rem;
+  font-size: 1.5rem;
+  font-family: 'Amaranth', sans-serif;
+  border: white solid 2px;
+  border-radius: 1rem;
+  color: white;
+}
+
+.solution__h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  font-family: 'Amaranth', sans-serif;
 }

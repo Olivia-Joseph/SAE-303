@@ -1,213 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      La Mobilité Responsable
-    </title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
-    <script src="lottie.js"></script>
-  </head>
 
-  <body>
-    <div class="page">
-      <div class="section__accueil">
-        <img class="accueil__img" src="./asset/background.png" />
-        <div id="bm" class="accueil__anim"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    La Mobilité Responsable
+  </title>
+  <link rel="stylesheet" href="style.css" />
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+  <script src="lottie.js"></script>
+</head>
+
+<body>
+  <div class="page">
+    <div class="section__accueil">
+      <img class="accueil__img" src="./asset/background.png" />
+      <div id="bm" class="accueil__anim"></div>
+    </div>
+
+    <section class="carrousel">
+      <div class="section__horizontale">
+        <div class="pin-wrap">
+          <section class="page2">
+            <h2 class="page2__text">
+              Savez-vous qu'en moyenne, les européens passent 9h30 par semaine
+              dans un transport ?
+            </h2>
+            <div class="page2__div">
+              <h2 class="page2__text--droite">Parmi eux :</h2>
+            </div>
+            <lottie-player class="page2__video" id="page2" src="./json/piechart3.json" background="transparent"
+              speed="1" direction="1" mode="normal" autoplay>
+            </lottie-player>
+            <h2 class="page2__text">
+              Mais connaissez-vous l'impact de vos trajets ?
+            </h2>
+            <div class="page2__navbar"></div>
+          </section>
+
+          <section class="section__pieton">
+            <h3 class="h3__pieton">Je suis en forme</h3>
+            <div class="h3-h2__pieton">
+              <h2 class="h3-h2__pieton-h2">23%</h2>
+              <h3 class="h3-h2__pieton-h3">se rendent au travail à pied</h3>
+            </div>
+            <h3 class="h3-2__pieton">
+              Je participe à la </br> limitation des embouteillages
+            </h3>
+            <h3 class="h3-3__pieton">Ne produit pas de C02</h3>
+          </section>
+
+          <section class="section__velo">
+            <h3 class="velo__texte">
+              Fin 2021, près d'un Français</br> sur 10 déclarait avoir</br> augmenté son
+              usage du</br> vélo pour ses déplacements du quotidien
+            </h3>
+            <h3 class="h3__velo">Ne produit pas de C02</h3>
+          </section>
+
+          <section class="section__train">
+            <h3 class="h3__train">
+              27,2 millions de voyageurs</br> transportés à grande vitesse
+            </h3>
+          </section>
+
+          <section class="section__moto">
+            <div class="texte__moto">
+              <h2>50%</h2>
+              <h3>
+                en moins de substances </br>nocives et d'émissions de CO2</br> qu'une
+                voiture
+              </h3>
+            </div>
+            <h3 class="h3-2__moto">
+              Les motos électriques représentent environ 2 à 3% du marché
+            </h3>
+
+          </section>
+
+          <section class="section__bus">
+            <lottie-player class="bus" id="bus" src="./json/bus.json" background="transparent" mode="normal" autoplay
+              loop control></lottie-player>
+            <h3 class="h3-2__bus">
+              Plus efficace énergétiquement, </br> consomme moins </br> d'espace et de </br>
+              ressources
+            </h3>
+            <h2 class="h3-3__bus">
+              1 kg CO2/10km
+            </h2>
+          </section>
+
+          <section class="section__voiture">
+            <h3 class="h3__voiture">
+              1,3 million de personnes perdent la </br> vie dans des accidents de
+              circulation
+            </h3>
+            <lottie-player class="station" id="station" src="./json/station.json" background="transparent" direction="1"
+              mode="normal" hover></lottie-player>
+            <lottie-player class="voiture" id="voiture" src="./json/voiture.json" background="transparent" speed="1"
+              direction="1" mode="normal" autoplay loop></lottie-player>
+            <h2 class="texte__voiture">1,9 kg CO2/10km</h2>
+          </section>
+
+          <section class="section__bateau">
+            <lottie-player class="meduse" id="meduse" src="./json/meduse.json" background="transparent" speed="1"
+              direction="1" mode="normal" autoplay></lottie-player>
+          </section>
+
+
+          <section class="section__avion">
+            <lottie-player class="avion" id="avion" src="./json/avion.json" background="transparent" speed="1"
+              direction="1" mode="normal" autoplay></lottie-player>
+          </section>
+        </div>
       </div>
+    </section>
 
-      <section class="carrousel">
-        <div class="section__horizontale">
-          <div class="pin-wrap">
-            <section class="page2">
-              <h2 class="page2__text">
-                Savez-vous qu'en moyenne, les européens passent 9h30 par semaine
-                dans un transport ?
-              </h2>
 
-              <div class="page2__div">
-                <h2 class="page2__text--droite">Parmi eux :</h2>
-              </div>
+    <section class="consequences">
+      <h2 class="consequences__title">
+        ... et les conséquences ?
+      </h2>
+      <lottie-player class="terre" id="terre" src="./json/terre.json" background="transparent" speed="1" direction="1"
+        mode="normal">
+      </lottie-player>
+    </section>
 
-              <lottie-player
-                class="page2__video"
-                id="page2"
-                src="./json/piechart3.json"
-                background="transparent"
-                speed="1"
-                direction="1"
-                mode="normal"
-                autoplay
-              >
-              </lottie-player>
+    <section class="section__solution">
+      <h1 class="solution__h1">Et des solutions durables pour un avenir plus vert</h1>
+      <div class="selective__solutions">
+        <div class="flip-container">
+          <div class="flipper">
+            <div class="front">
+              <img class="solution__velo-img" src="./asset/solution_velo.png" alt="">
 
-              <h2 class="page2__text">
-                Mais connaissez-vous l'impact de vos trajets ?
-              </h2>
-
-              <div class="page2__navbar"></div>
-            </section>
-            <section class="section__pieton">
-              <h3 class="h3__pieton">Je suis en forme</h3>
-              <div class="h3-h2__pieton">
-                <h2>23%</h2>
-                <h3>se rendent au travail à pied</h3>
-              </div>
-              <h3 class="h3-2__pieton">
-                Je participe à la</br> limitation des bouchons
-              </h3>
-              <h3 class="h3-3__pieton">Ne produit pas de C02</h3>
-            </section>
-
-            <section class="section__velo">
-              <h3 class="velo__texte">
-                Fin 2021, près d'un Français</br> sur 10 déclarait avoir</br> augmenté son
-                usage du</br> vélo pour ses déplacements du quotidien
-              </h3>
-              <h3 class="h3-2__velo">Activité physique</h3>
-              <h3 class="h3-3__velo">Je me déplace aussi </br>vite qu’en voiture</h3>
-              <h3 class="h3-4__velo">Ne produit pas de C02</h3>
-            </section>
-
-            <section class="section__train">
-              <h3 class="texte__train">Produit 248 g CO2/10km</h3>
-              <h3 class="h3-2__train">
-                27,2 millions de voyageurs</br> transportés à grande vitesse
-              </h3>
-              <h3 class="h3-3__train">Confort du trajet</h3>
-            </section>
-
-            <section class="section__moto">
-              <h3 class="texte__moto">616 g CO2/10km</h3>
-              <h3 class="h3-2__moto">
-                Les motos électriques représentent environ 2 à 3% du marché
-              </h3>
-              <div class="texte2__moto">
-                <h2>50%</h2>
-                <h3>
-                  en moins de substances </br>nocives et d'émissions de CO2</br> qu'une
-                  voiture
-                </h3>
-              </div>
-              <div class="texte3__moto">
-                <h2>8,3%</h2>
-                <h3>
-                  des ménages sont équipés </br> d'au moins un deux-roues motorisé
-                </h3>
-              </div>
-            </section>
-
-            <section class="section__bus">
-              <div class="sangle__texte">
-                <h2>Bus</h2>
-                <h2>Métro</h2>
-                <h2>Tramway</h2>
-              </div>
-              <h3 class="h3-2__bus">
-                Plus efficace énergétiquement, </br> consomme moins </br>  d'espace et de </br> 
-                ressources
-              </h3>
-              <div class="texte__bus">
-                <h2>12%</h2>
-                <h3>
-                  de la population mondiale utilise </br> régulièrement les transports
-                  en commun
-                </h3>
-              </div>
-              <h2 class="h3-3__bus">
-                1 kg CO2/10km
-              </h2>
-            </section>
-
-            <section class="section__voiture">
-              <h3 class="h3__voiture">
-                1,3 million de personnes perdent la </br> vie dans des accidents de
-                circulation
-              </h3>
-              <h3 class="h3-2__voiture">74% des actifs l'utilisent</h3>
-              <lottie-player
-                class="station"
-                id="station"
-                src="./json/station.json"
-                background="transparent"
-                direction="1"
-                mode="normal"
-                hover
-              ></lottie-player>
-              <lottie-player
-                class="voiture"
-                id="voiture"
-                src="./json/voiture.json"
-                background="transparent"
-                speed="1"
-                direction="1"
-                mode="normal"
-                autoplay
-                loop
-              ></lottie-player>
-              <h2 class="texte__voiture">1,9 kg CO2/10km</h2>
-              
-            </section>
-
-            <section class="section__bateau">
-              <div class="bateau__texte">
-                <div class="bat__bateau">
-                  <h2>94</h2>
-                  <h3>
-                    paquebots émettent dix fois <br> plus de dioxyde de soufre que 
-                  </h3>
-                </div>
-                
-               <div class="bat2__bateau">
-                <h2>260</h2>
-                <h3>millions de voitures</h3>
-               </div>
-              </div>
-            </section>
-
-            <section class="section__avion">
-              <div class="texte__avion">
-                <h2>10 Tonnes</h2>
-                <h3>/10km</h3>
-              </div>
-              <div class="texte2__avion">
-                <h2>11%</h2>
-                <h3>de la population<br>mondiale  a pris l'avion</h3>
-              </div>
-            </section>
+            </div>
+            <div class="back">
+              Encourager les déplacements à pied, à vélo ou en trottinette pour les trajets courts, contribuant ainsi à
+              la réduction de la pollution de l'air.
+            </div>
           </div>
         </div>
-      </section>
 
-      <section class="section__conclusion">
-        <h2>
-          Created by >.>Adapted from the original by Cameron Knight
-        </h2>
-      </section>
-    </div>
-  </body>
-  <script>
-    let anim = bodymovin.loadAnimation({
-      container: document.getElementById("bm"),
-      renderer: "svg",
-      autoplay: true,
-      loop: false,
-      path: "./json/animAccueil.json",
-    });
-    LottieInteractivity.create({
-        player: "#page2",
-        mode: "scroll",
-        loop: false,
-        actions: [
-          {
-            visibility: [0.1, 0.2],
-            type: "play",
-          },
-        ],
-      });
-  </script>
+        <div class="flip-container">
+          <div class="flipper">
+            <div class="front">
+              <img class="solution__velo-img" src="./asset/solution_bus.png" alt="">
+
+            </div>
+            <div class="back">
+              Encourager l'utilisation des transports en commun, qui peuvent réduire le nombre de véhicules sur les
+              routes et les émissions de gaz.
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-container">
+          <div class="flipper">
+            <div class="front">
+              <img class="solution__velo-img" src="./asset/solution_voiture.png" alt="">
+
+            </div>
+            <div class="back">
+              Promouvoir le covoiturage pour réduire le nombre de véhicules sur les routes et partager les coûts de
+              transport.
+            </div>
+          </div>
+        </div>
+        <div class="flip-container">
+          <div class="flipper">
+            <div class="front">
+              <img class="solution__velo-img" src="./asset/solution_voiture.png" alt="">
+
+            </div>
+            <div class="back">
+              Favoriser l'adoption de véhicules électriques pour réduire les émissions de gaz à effet de serre et la
+              dépendance aux combustibles fossiles.
+            </div>
+          </div>
+        </div>
+        <div class="flip-container">
+          <div class="flipper">
+            <div class="front">
+              <img class="solution__velo-img" src="./asset/solution_pompes.png" alt="">
+
+            </div>
+            <div class="back">
+              Promouvoir l'utilisation d'énergies propres dans les transports, comme l'hydrogène ou d'autres sources
+              d'énergie alternatives.
+            </div>
+          </div>
+        </div>
+        <div class="flip-container">
+          <div class="flipper">
+            <div class="front">
+              <img class="solution__velo-img" src="./asset/teletravail.png" alt="">
+
+            </div>
+            <div class="back">
+              Encourager le télétravail lorsque cela est possible pour réduire le besoin de déplacements quotidiens.
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="solution__h2">L'Ademe vous remercie de votre engagement</h2>
+    </section>
+  </div>
+  <script src="./script.js"></script>
+</body>
 </html>
