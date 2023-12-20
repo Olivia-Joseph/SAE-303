@@ -39,3 +39,52 @@
           },
         ],
       });
+
+
+
+
+
+
+ <section class="consequences">
+        <h2 class="consequences__title">
+          ... et les conséquences ?
+        </h2>
+
+        <lottie-player 
+        class="consequences__video" 
+        id="firstLottie" 
+        src="./json/terre2.json" 
+        background="transparent" 
+        speed="1" direction="1" 
+        mode="normal" 
+        hover>
+        </lottie-player>
+      </section>
+
+
+
+
+
+
+
+
+
+.consequences{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #436987;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+}
+
+.consequences__title{
+  font-family: 'Amaranth', sans-serif;
+  font-size: 5rem;
+  font-weight: 700;
+  padding: 0;
+  margin-top: 2rem ;
+  text-align: center;
+}
