@@ -27,3 +27,15 @@
               background="transparent"
               loop
             ></lottie-player>
+
+ LottieInteractivity.create({
+        player: "#meduse",
+        mode: "scroll",
+        loop: false,
+        actions: [
+          {
+            visibility: [0.5, 0],
+            type: "play",
+          },
+        ],
+      });
