@@ -28,13 +28,13 @@
               loop
             ></lottie-player>
 
- LottieInteractivity.create({
-        player: "#meduse",
+      LottieInteractivity.create({
+        player: "#page2",
         mode: "scroll",
         loop: false,
         actions: [
           {
-            visibility: [0.5, 0],
+            visibility: [0.1, 0.2],
             type: "play",
           },
         ],
