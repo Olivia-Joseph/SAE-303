@@ -35,7 +35,7 @@
 
               <lottie-player
                 class="page2__video"
-                id="firstLottie"
+                id="page2"
                 src="./json/piechart3.json"
                 background="transparent"
                 speed="1"
@@ -176,7 +176,7 @@
               </div>
               <div class="texte2__avion">
                 <h2>11%</h2>
-                <h3>de la population mondiale <br> a pris l'avion</h3>
+                <h3>de la population<br>mondiale  a pris l'avion</h3>
               </div>
             </section>
           </div>
@@ -198,5 +198,16 @@
       loop: false,
       path: "./json/animAccueil.json",
     });
+    LottieInteractivity.create({
+        player: "#page2",
+        mode: "scroll",
+        loop: false,
+        actions: [
+          {
+            visibility: [0.1, 0.2],
+            type: "play",
+          },
+        ],
+      });
   </script>
 </html>
